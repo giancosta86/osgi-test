@@ -1,7 +1,4 @@
-*.iml
-**/.git/**
-**/build/**
-**/.gradle/**
-**/.idea/**
-**/felix-cache/**
-hotswap-boot/src/main/resources/info/gianlucacosta/osgitest/bundles/
+/.gradle/
+/build/
+/felix-cache/
+/hotswap-boot/src/main/resources/info/gianlucacosta/osgitest/bundles/
