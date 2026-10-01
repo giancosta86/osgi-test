@@ -1,38 +1,4 @@
-
-buildscript {
-    repositories {
-        maven {
-            url 'https://dl.bintray.com/giancosta86/Hephaestus'
-        }
-
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'info.gianlucacosta.moonlicense:moonlicense-gradle:4.0'
-    }
-}
-
 description = "Prototype of a Scala-based, JavaFX app, powered by OSGi"
-
-
-
-allprojects {
-    apply plugin: 'info.gianlucacosta.moonlicense'
-
-
-    moonLicense {
-        license = apache2
-
-        productInfo {
-            productName = 'OSGi-Test'
-            inceptionYear = 2015
-            copyrightHolder = 'Gianluca Costa'
-        }
-    }
-}
-
-
 
 subprojects {
     apply plugin: 'java'
@@ -45,8 +11,6 @@ subprojects {
 
     project.classes.dependsOn("setNotices")
 }
-
-
 
 task jar << {}
 jar.dependsOn subprojects.jar
