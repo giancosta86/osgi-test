@@ -1,4 +1,4 @@
-rootProject.name = 'OSGi-Test'
+rootProject.name = 'osgi-test'
 
 include 'hello-osgi',
         'hotswap-gui',
